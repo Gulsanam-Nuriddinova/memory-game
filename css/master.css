@@ -11,8 +11,8 @@ body {
     grid-template-columns: repeat(7, 120px);
     gap: 15px;
     perspective: 1100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .card {
     width: 90px;

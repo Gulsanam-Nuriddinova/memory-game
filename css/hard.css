@@ -84,13 +84,13 @@ body {
 
 @media (max-width: 768px) {
     .game-board {
-        grid-template-columns: repeat(4, 80px); /* Kartalar o'lchami kichrayadi */
+        grid-template-columns: repeat(4, 70px); 
         gap: 10px;
     }
 
     .card {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .card-front, .card-back {

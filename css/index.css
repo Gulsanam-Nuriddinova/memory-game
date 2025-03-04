@@ -125,6 +125,33 @@ body {
     transform: scale(1.1);
 }
 
+.back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    border-radius: 20px;
+    background: rgba(100, 100, 100, 0.8); /* Kulrang */
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(80, 80, 80, 1); /* Bir oz to‘qroq kulrang */
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn:active {
+    transform: scale(0.95);
+}
+
+
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;

@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /admin/    # Admin panelni indekslashga ruxsat berilmaydi
+Disallow: /admin/  # Agar maxsus sahifani indekslashni xohlamasangiz
 Allow: /
 
 Sitemap: https://memory-game-mu-ashen.vercel.app/sitemap.xml

@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>Memory game</title>
 </head>
+
 <body>
 
     <div class="container">
 
         <div class="hero">
-    <div class="text-box">
-        <h1>Welcome to the <br> <p>MEMORY GAME</p> </h1>
-    </div>
+            <div class="text-box">
+                <h1>Welcome to the <br>
+                    <p>MEMORY GAME</p>
+                </h1>
+            </div>
 
-    <img src="./img/brain.png" alt="">
+            <img src="./img/brain.png" alt="">
 
         </div>
 
+
+
         <div class="mode-box">
 
-    <ul class="mode-list">
+            <ul class="mode-list">
 
-        <h3>Choose a game mode</h3>
+                <h3>Choose a game mode</h3>
 
-        <li class="mode-list-item">
-            <a href="kids.html"> <h4 class="k">Kids</h4></a>
-        </li>
-        <li class="mode-list-item">
-            <a href="easy.html"><h4 class="e">Easy</h4></a>
-        </li>
-        <li class="mode-list-item">
-            <a href="medium.html"><h4 class="m">Medium</h4></a>
-        </li>
-        <li class="mode-list-item">
-            <a href="hard.html"><h4 class="h">Hard</h4></a>
-        </li>
-        <li class="mode-list-item">
-            <a href="master.html"><h4 class="mas">Master</h4></a>
-        </li>
+                <li class="mode-list-item">
+                    <a href="kids.html">
+                        <h4 class="k">Kids</h4>
+                    </a>
+                </li>
+                <li class="mode-list-item">
+                    <a href="easy.html">
+                        <h4 class="e">Easy</h4>
+                    </a>
+                </li>
+                <li class="mode-list-item">
+                    <a href="medium.html">
+                        <h4 class="m">Medium</h4>
+                    </a>
+                </li>
+                <li class="mode-list-item">
+                    <a href="hard.html">
+                        <h4 class="h">Hard</h4>
+                    </a>
+                </li>
+                <li class="mode-list-item">
+                    <a href="master.html">
+                        <h4 class="mas">Master</h4>
+                    </a>
+                </li>
 
-    </ul>
-</div>
+            </ul>
+        </div>
 
     </div>
 
+    <div id="gameOverScreen" style="display: none;">
+        <h2 id="gameOverText"></h2>
+        <p id="countdown"></p>
+        <button onclick="restartGame()">🔄 Again</button>
+    </div>
 
-    
+
+    <script src="app.js"></script>
+
+
+
 </body>
+
 </html>

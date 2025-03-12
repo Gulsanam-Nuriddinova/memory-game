@@ -6,6 +6,37 @@ body {
     background: linear-gradient(120deg, #1e1e2fbb, #3a3a6a99);
     font-family: Arial, sans-serif;
 }
+
+#timerDisplay {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1e90ff;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#resultDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+}
+
 .game-board {
     display: grid;
     grid-template-columns: repeat(7, 120px);
@@ -14,6 +45,7 @@ body {
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
 .card {
     width: 90px;
     height: 90px;
@@ -22,6 +54,7 @@ body {
     transition: transform 0.6s;
     cursor: pointer;
 }
+
 .card-inner {
     width: 100%;
     height: 100%;
@@ -29,10 +62,14 @@ body {
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
-.card.flip .card-inner, .card.show .card-inner {
+
+.card.flip .card-inner,
+.card.show .card-inner {
     transform: rotateY(180deg);
 }
-.card-front, .card-back {
+
+.card-front,
+.card-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -44,15 +81,18 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .card-front {
-    background:#ffcc00 ;
+    background: #ffcc00;
 }
+
 .card-back {
     background-color: #fff;
     transform: rotateY(180deg);
 }
+
 .card.matched .card-back {
-    background-color:white ;
+    background-color: white;
 }
 
 
@@ -73,57 +113,126 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+
 .back-button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
 .back-button svg {
     width: 20px;
     height: 20px;
 }
 
-@media (max-width: 600px) {
+.restart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.restart-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 450px) {
     .game-board {
-        grid-template-columns: repeat(4, 80px);
-        gap: 8px;
+        display: grid !important; /* Flex bo‘lsa ham grid ishlaydi */
+        grid-template-columns: repeat(4, 1fr) !important; /* Faqat 4 ta chiqadi */
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Sig‘ish uchun */
+        margin-top: 50px;
     }
+
     .card {
-        width: 70px;
-        height: 70px;
-        font-size: 20px;
+        width: 60px !important;
+        height: 60px !important;
     }
-    .back-button {
-        bottom: 10px;
-        left: 10px;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-    .back-button svg {
-        width: 16px;
-        height: 16px;
+
+    .card-front,
+    .card-back {
+        font-size: 23px !important;
     }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (max-width: 900px) {
     .game-board {
-        grid-template-columns: repeat(5, 100px);
+        margin-top: 100px;
+        grid-template-columns: repeat(7, 80px);
         gap: 10px;
     }
-
 
     .card {
         width: 80px;
         height: 80px;
-        font-size: 25px;
     }
-    .back-button {
-        bottom: 15px;
-        left: 15px;
-        padding: 9px 18px;
-        font-size: 15px;
+
+    .card-front,
+    .card-back {
+        font-size: 24px;
     }
-    .back-button svg {
-        width: 18px;
-        height: 18px;
+
+    #resultDisplay {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 30px;
+        border-radius: 10px;
+        display: none;
+        z-index: 100;
+    }
+}
+
+@media (max-width: 700px) {
+    .game-board {
+        margin-top: 100px;
+        grid-template-columns: repeat(6, 80px);
+        gap: 10px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 24px;
+    }
+
+    #resultDisplay {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 30px;
+        border-radius: 10px;
+        display: none;
+        z-index: 100;
     }
 }

@@ -1,95 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/medium.css">
     <title>Document</title>
 </head>
+
 <body>
 
-      
+    <div id="timerDisplay">Time: 60 s</div>
+    <div id="resultDisplay" style="display: none;"></div>
+
+
     <div class="game-board" id="gameBoard"></div>
+
+
+
+    <button class="back-button" onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        Back
+    </button>
+
+    <button class="restart-button" onclick="restartGame()">Restart 🔄</button>
+
+
     <script>
-        const images = ['🐭', '⚽️', '🍋', '🍇', '🐼', '🏀', '🐭', '⚽️', '🍋', '🍇', '🐼', '🏀',];
-        let shuffledImages = images.sort(() => Math.random() - 0.5);
-        let gameBoard = document.getElementById('gameBoard');
-        let selectedCards = [];
-        let matchedCards = 0;
-        
-        function createCards() {
-            gameBoard.innerHTML = '';
-            shuffledImages.forEach((image, index) => {
-                let card = document.createElement('div');
-                card.classList.add('card');
-                card.dataset.image = image;
-                
-                let cardInner = document.createElement('div');
-                cardInner.classList.add('card-inner');
-                
-                let cardFront = document.createElement('div');
-                cardFront.classList.add('card-front');
-                
-                let cardBack = document.createElement('div');
-                cardBack.classList.add('card-back');
-                cardBack.textContent = image;
-                
-                cardInner.appendChild(cardFront);
-                cardInner.appendChild(cardBack);
-                card.appendChild(cardInner);
-                card.addEventListener('click', flipCard);
-                gameBoard.appendChild(card);
-            });
+        function goBack() {
+            window.history.back();
         }
-        
-        function flipCard() {
-            if (selectedCards.length < 2 && !this.classList.contains('matched') && !this.classList.contains('flip')) {
-                this.classList.add('flip');
-                selectedCards.push(this);
-                
-                if (selectedCards.length === 2) {
-                    setTimeout(checkMatch, 700);
-                }
-            }
-        }
-        
-        function checkMatch() {
-            if (selectedCards[0].dataset.image === selectedCards[1].dataset.image) {
-                selectedCards.forEach(card => card.classList.add('matched'));
-                matchedCards += 2;
-                
-                if (matchedCards === images.length) {
-                    setTimeout(resetGame, 3000);
-                }
-            } else {
-                selectedCards.forEach(card => card.classList.remove('flip'));
-            }
-            selectedCards = [];
-        }
-        
-        function resetGame() {
-            matchedCards = 0;
-            selectedCards = [];
-            shuffledImages = images.sort(() => Math.random() - 0.5);
-            createCards();
-        }
-        
-        createCards();
     </script>
 
+    <script>
+        function restartGame() {
+            clearInterval(timer);
+            resetGame();
+        }
+    </script>
 
-<button class="back-button" onclick="goBack()">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    Back
-</button>
+    <script src="./js/medium.js"></script>
 
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
 
-    
-    
+
 </body>
+
 </html>

@@ -77,7 +77,7 @@ function startTimer() {
 
         if (timeLeft <= 0) {
             clearInterval(timer);
-            endGame(false); // Yutqazdi
+            endGame(false); 
         }
     }, 1000);
 }
@@ -103,7 +103,7 @@ function checkMatch() {
         matchedCards += 2;
 
         if (matchedCards === images.length) {
-            endGame(true); // Yutdi
+            endGame(true); 
         }
     } else {
         selectedCards.forEach(card => card.classList.remove('flip'));

@@ -148,12 +148,12 @@ body {
 
 @media (max-width: 450px) {
     .game-board {
-        display: grid !important; /* Flex bo‘lsa ham grid ishlaydi */
-        grid-template-columns: repeat(4, 1fr) !important; /* Faqat 4 ta chiqadi */
+        display: grid !important; 
+        grid-template-columns: repeat(4, 1fr) !important; 
         gap: 5px;
         justify-content: center;
         align-items: center;
-        max-width: 100%; /* Sig‘ish uchun */
+        max-width: 100%; 
         margin-top: 120px;
     }
 

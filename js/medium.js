@@ -63,7 +63,7 @@ function resetGame() {
 
 createCards();
 
-let timeLeft = 50;
+let timeLeft = 35;
 let timer;
 
 function startTimer() {
@@ -113,7 +113,7 @@ function checkMatch() {
 function resetGame() {
     matchedCards = 0;
     selectedCards = [];
-    timeLeft = 50;
+    timeLeft = 35;
     document.getElementById("timerDisplay").innerText = `Time: ${timeLeft} s`;
     shuffledImages = images.sort(() => Math.random() - 0.5);
     createCards();

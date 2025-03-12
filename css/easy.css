@@ -129,6 +129,7 @@ body {
     right: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background-color: #007bff;
     color: white;
@@ -170,11 +171,7 @@ body {
         font-size: 30px;
     }
 
-    .back-button,
-    .restart-button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+
 }
 
 @media (max-width: 450px) {
@@ -204,17 +201,6 @@ body {
         padding: 3px 6px;
     }
 
-    .back-button,
-    .restart-button {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-
-    .back-button svg,
-    .restart-button svg {
-        width: 14px;
-        height: 14px;
-    }
 }
 
 @media (max-width: 900px) {

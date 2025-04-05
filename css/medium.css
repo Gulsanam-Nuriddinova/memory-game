@@ -37,7 +37,6 @@ body {
     z-index: 100;
 }
 
-
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 120px);
@@ -93,7 +92,6 @@ body {
 .card.matched .card-back {
     background-color: white;
 }
-
 
 .back-button {
     position: fixed;
@@ -151,9 +149,11 @@ body {
     -webkit-touch-callout: none;
 }
 
-.restart-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+@media (hover: hover) {
+    .restart-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 900px) {

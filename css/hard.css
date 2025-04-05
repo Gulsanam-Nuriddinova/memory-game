@@ -94,7 +94,6 @@ body {
     background-color: white;
 }
 
-
 .back-button {
     position: fixed;
     bottom: 20px;
@@ -151,9 +150,11 @@ body {
     -webkit-touch-callout: none;
 }
 
-.restart-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+@media (hover: hover) {
+    .restart-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 450px) {

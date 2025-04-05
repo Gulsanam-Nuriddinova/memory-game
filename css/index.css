@@ -209,11 +209,6 @@ body {
 
     .mode-list-item {
         margin-bottom: -85px;
-        -webkit-tap-highlight-color: transparent;
-        outline: none;
-        user-select: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
     }
 
     .mode-list-item a {
@@ -223,5 +218,10 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
     }
 }

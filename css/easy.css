@@ -37,7 +37,6 @@ body {
     z-index: 100;
 }
 
-
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 120px);
@@ -93,7 +92,6 @@ body {
 .card.matched .card-back {
     background-color: #fff;
 }
-
 
 .back-button {
     position: fixed;
@@ -170,8 +168,6 @@ body {
         height: 90px;
         font-size: 30px;
     }
-
-
 }
 
 @media (max-width: 450px) {
@@ -199,8 +195,7 @@ body {
         top: 40px;
         left: 40px;
         padding: 3px 6px;
-    }
-
+    }      
 }
 
 @media (max-width: 900px) {

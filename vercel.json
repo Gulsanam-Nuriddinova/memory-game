@@ -1,9 +1,0 @@
-{
-    "routes": [
-      {
-        "src": "/google(.*).html",
-        "dest": "/google$1.html"
-      }
-    ]
-  }
-  

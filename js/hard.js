@@ -63,7 +63,7 @@ function resetGame() {
 
 createCards();
 
-let timeLeft = 100;
+let timeLeft = 70;
 let timer;
 
 function startTimer() {
@@ -95,7 +95,6 @@ function endGame(isWin) {
     setTimeout(resetGame, 3000);
 }
 
-
 function checkMatch() {
     if (selectedCards[0].dataset.image === selectedCards[1].dataset.image) {
         selectedCards.forEach(card => card.classList.add('matched'));
@@ -113,7 +112,7 @@ function checkMatch() {
 function resetGame() {
     matchedCards = 0;
     selectedCards = [];
-    timeLeft = 100;
+    timeLeft = 70;
     document.getElementById("timerDisplay").innerText = `Time: ${timeLeft} s`;
     shuffledImages = images.sort(() => Math.random() - 0.5);
     createCards();

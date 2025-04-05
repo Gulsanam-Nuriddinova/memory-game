@@ -96,7 +96,6 @@ function endGame(isWin) {
     setTimeout(resetGame, 3000);
 }
 
-
 function checkMatch() {
     if (selectedCards[0].dataset.image === selectedCards[1].dataset.image) {
         selectedCards.forEach(card => card.classList.add('matched'));

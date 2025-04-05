@@ -181,6 +181,11 @@ body {
     }
 
     .card {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
         width: 60px;
         height: 60px;
     }
@@ -195,7 +200,7 @@ body {
         top: 40px;
         left: 40px;
         padding: 3px 6px;
-    }      
+    }
 }
 
 @media (max-width: 900px) {

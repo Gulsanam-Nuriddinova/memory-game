@@ -154,6 +154,11 @@ body {
     .card {
         width: 90px;
         height: 90px;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
     }
 
     .card-front,
@@ -170,6 +175,11 @@ body {
     .card {
         width: 80px;
         height: 80px;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
     }
 
     .card-front,

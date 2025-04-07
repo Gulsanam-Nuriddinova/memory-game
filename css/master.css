@@ -160,18 +160,18 @@ body {
 
 @media (max-width: 450px) {
     .game-board {
-        display: grid !important; 
-        grid-template-columns: repeat(4, 1fr) !important; 
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
         gap: 5px;
         justify-content: center;
         align-items: center;
-        max-width: 100%; 
+        max-width: 100%;
         margin-top: 50px;
     }
 
     .card {
-        width: 60px !important;
-        height: 60px !important;
+        width: 55px !important;
+        height: 55px !important;
         -webkit-tap-highlight-color: transparent;
         outline: none;
         user-select: none;
@@ -181,7 +181,7 @@ body {
 
     .card-front,
     .card-back {
-        font-size: 23px !important;
+        font-size: 23.5px !important;
     }
 }
 

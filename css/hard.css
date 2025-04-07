@@ -169,8 +169,8 @@ body {
     }
 
     .card {
-        width: 60px !important;
-        height: 60px !important;
+        width: 55px !important;
+        height: 55px !important;
         -webkit-tap-highlight-color: transparent;
         outline: none;
         user-select: none;

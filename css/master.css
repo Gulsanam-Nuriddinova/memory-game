@@ -170,8 +170,8 @@ body {
     }
 
     .card {
-        width: 60px !important;
-        height: 60px !important;
+        width: 65px !important;
+        height: 65px !important;
         -webkit-tap-highlight-color: transparent;
         outline: none;
         user-select: none;
@@ -181,7 +181,7 @@ body {
 
     .card-front,
     .card-back {
-        font-size: 24px !important;
+        font-size: 26px !important;
     }
 }
 

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.back-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+        padding: 0 15px;
+        padding-bottom: 50px; /* Pastki bo'sh joyni kichik ekranlar uchun moslashtirish */
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+        padding: 0 10px;
+        padding-bottom: 40px; /* Telefonlar uchun pastki joyni kamaytirdik */
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    a {
+        font-size: 12px;
+    }
+}

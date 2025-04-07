@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.about {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+.about h2 {
+    color: #333;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.back-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 24px;
+    }
+
+    .about p,
+    .about ul {
+        font-size: 14px;
+    }
+
+    .back-button {
+        bottom: 15px;
+        left: 15px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .back-button svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    .about p,
+    .about ul {
+        font-size: 12px;
+    }
+}

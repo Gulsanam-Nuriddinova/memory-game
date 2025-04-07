@@ -95,13 +95,18 @@ body {
     background-color: white;
 }
 
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    margin-bottom: 15px;
+}
+
 .back-button {
-    position: fixed;
     bottom: 20px;
     left: 20px;
     display: flex;
     align-items: center;
-    gap: 8px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -129,12 +134,9 @@ body {
 }
 
 .restart-button {
-    position: fixed;
     bottom: 20px;
     right: 20px;
     display: flex;
-    align-items: center;
-    gap: 8px;
     background-color: #007bff;
     color: white;
     border: none;

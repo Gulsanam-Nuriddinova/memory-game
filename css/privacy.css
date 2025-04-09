@@ -50,12 +50,11 @@ a {
     height: 20px;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     body {
         margin: 20px;
         padding: 0 15px;
-        padding-bottom: 50px; /* Pastki bo'sh joyni kichik ekranlar uchun moslashtirish */
+        padding-bottom: 50px; 
     }
 
     h1 {
@@ -72,7 +71,7 @@ a {
     body {
         margin: 10px;
         padding: 0 10px;
-        padding-bottom: 40px; /* Telefonlar uchun pastki joyni kamaytirdik */
+        padding-bottom: 40px; 
     }
 
     h1 {

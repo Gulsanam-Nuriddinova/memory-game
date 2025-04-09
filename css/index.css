@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Montserrat:wght@400;700&display=swap');
-
 body {
     background: linear-gradient(120deg, #1e1e2fbb, #3a3a6a99);
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -87,7 +85,7 @@ body {
 .text-box {
     margin-top: 10px;
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lora', serif;
 }
 
 .text-box p {

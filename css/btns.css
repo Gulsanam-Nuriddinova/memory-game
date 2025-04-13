@@ -74,7 +74,7 @@ body {
 }
 
 .card-front {
-    background: #A4B0C2;
+    background:#FF7043;
 }
 /* ffcc00 */
 .card-back {
@@ -93,7 +93,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: #7f00ff;
+    background:linear-gradient(135deg, #7f00ff, #e100ff) ;
     color: white;
     border: none;
     padding: 9px 17px;
@@ -107,7 +107,7 @@ body {
     -webkit-backface-visibility: hidden;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    z-index: 2;
+    z-index: 10;
 }
 
 .back-button:hover {
@@ -126,7 +126,7 @@ body {
     right: 20px;
     display: flex;
     align-items: center;
-    background-color: #007bff;
+    background:linear-gradient(135deg, #7f00ff, #e100ff) ;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -140,7 +140,7 @@ body {
     -webkit-backface-visibility: hidden;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    z-index: 2;
+    z-index: 10;
 }
 
 .restart-button:hover {

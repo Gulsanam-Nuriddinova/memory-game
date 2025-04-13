@@ -121,7 +121,7 @@ body {
 }
 
 .footer {
-    width: 100%;
+    width: 97%;
     background: linear-gradient(140deg,#7f00ff, #e100ff, #1e90ff);
     color: white;
     padding: 20px;
@@ -129,8 +129,7 @@ body {
     bottom: 0;
     left: 0;
     text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
 }
 
 .footer .nom {

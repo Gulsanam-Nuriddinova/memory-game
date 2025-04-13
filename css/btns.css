@@ -76,7 +76,7 @@ body {
 .card-front {
     background:#FF7043;
 }
-/* ffcc00 */
+
 .card-back {
     background-color: #fff;
     transform: rotateY(180deg);

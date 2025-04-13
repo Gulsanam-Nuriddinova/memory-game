@@ -121,7 +121,7 @@ body {
 
 .footer {
     width: 100%;
-    background: linear-gradient(135deg, #ff4b2b, #7f00ff, #e100ff, #1e90ff);
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
     color: white;
     padding: 20px;
     position: fixed;

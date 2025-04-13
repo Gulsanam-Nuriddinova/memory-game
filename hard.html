@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/hard.css">
+    <link rel="stylesheet" href="./css/btns.css">
     <title>Flipgame hard</title>
 </head>
 
 <body>
+    <div class="container">
+
 
     <div id="timerDisplay">Time: 120 s</div>
     <div id="resultDisplay" style="display: none;"></div>
@@ -26,20 +29,7 @@
     <button class="restart-button" onclick="restartGame()">Restart 🔄</button>
     </div>
 
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
-
-    <script>
-    function restartGame() {
-            clearInterval(timer);
-            resetGame();
-        }
-    </script>
-
     <script src="./js/hard.js"></script>
-
+    </div>
 </body>
 </html>

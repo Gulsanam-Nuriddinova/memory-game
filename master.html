@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/btns.css">
     <title>Flipgame master</title>
 </head>
 
 <body>
+    <div class="container">
+
 
     <div id="timerDisplay">Time: 180 s</div>
     <div id="resultDisplay" style="display: none;"></div>
     <div class="game-board" id="gameBoard"></div>
+
+    <div class="btns">
 
     <button class="back-button" onclick="goBack()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -23,20 +28,9 @@
     </button>
 
     <button class="restart-button" onclick="restartGame()">Restart 🔄</button>
-
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
-
-    <script>function restartGame() {
-            clearInterval(timer);
-            resetGame();
-        }
-    </script>
+    </div>
 
     <script src="./js/master.js"></script>
-
+    </div>
 </body>
 </html>

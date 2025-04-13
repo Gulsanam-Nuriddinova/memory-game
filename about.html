@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/btns.css">
     <title>About Flipgame</title>
 </head>
 <body>
+  <div class="container">
+
     <section class="about">
         <h1>About Flipgame</h1>
         <p>Flipgame is a fun and engaging memory game where you test your ability to match pairs of cards. It’s perfect for players of all ages and helps improve memory and concentration. The game features different difficulty levels, ranging from easy to master, ensuring that there’s a challenge for everyone!</p>
@@ -25,6 +28,7 @@
         <p>Thank you for playing Flipgame! Enjoy the game and challenge your memory skills!</p>
       </section>
 
+      <div class="btns">
       <button class="back-button" onclick="goBack()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -32,12 +36,15 @@
         </svg>
         Back
     </button>
+      </div>
     
       <script>
         function goBack() {
             window.history.back();
         }
     </script>
+        <div class="container">
+
 
 </body>
 </html>

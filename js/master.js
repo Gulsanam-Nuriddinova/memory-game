@@ -40,27 +40,6 @@ function flipCard() {
     }
 }
 
-function checkMatch() {
-    if (selectedCards[0].dataset.image === selectedCards[1].dataset.image) {
-        selectedCards.forEach(card => card.classList.add('matched'));
-        matchedCards += 2;
-
-        if (matchedCards === images.length) {
-            setTimeout(resetGame, 2500);
-        }
-    } else {
-        selectedCards.forEach(card => card.classList.remove('flip'));
-    }
-    selectedCards = [];
-}
-
-function resetGame() {
-    matchedCards = 0;
-    selectedCards = [];
-    shuffledImages = images.sort(() => Math.random() - 0.5);
-    createCards();
-}
-
 createCards();
 
 let timeLeft = 120;
@@ -121,12 +100,3 @@ function resetGame() {
 
 createCards();
 startTimer();
-
-function goBack() {
-    window.history.back();
-}
-
-function restartGame() {
-    clearInterval(timer);
-    resetGame();
-}

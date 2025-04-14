@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    color: white;
+    background: #fefce8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,8 +16,6 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
     z-index: 1000;
 }
 
@@ -35,7 +30,7 @@ body {
 }
 
 .popup-content p {
-    font-size: 16px;
+    font-size: 24px;
     color: #333;
 }
 
@@ -76,7 +71,7 @@ body {
 }
 
 .text-box {
-    top: 200px;
+    top: 250px;
     text-align: center;
     margin-bottom: 160px;
 }
@@ -84,12 +79,12 @@ body {
 .text-box h1 {
     font-size: 80px;
     margin-bottom: 25px;
-    color: #E0F7FA;
+    color: #78350f;
 }
 
 .text-box p {
     font-size: 22px;
-    color: #fff;
+    color: #78350f;
 }
 
 .btn {
@@ -98,18 +93,23 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    background: linear-gradient(140deg, #ff4b2b, #7f00ff, #e100ff, #1e90ff);
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite, btnBounce 2s infinite;
+    background: linear-gradient(140deg, #5f2a03, #d09c35, #d09c35, #5f2a03);
+    background-size: 400% 400%; 
+    animation: gradientMove 4s ease infinite, btnBounce 1.5s infinite;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+}
+
+.btn:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
 }
 
 .btn:hover {
@@ -121,21 +121,52 @@ body {
 }
 
 .footer {
-    width: 97%;
-    background: linear-gradient(140deg,#7f00ff, #e100ff, #1e90ff);
-    color: white;
-    padding: 20px;
+    width: calc(100% - 8px);
+    max-width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 50%; 
+    transform: translateX(-50%);
     text-align: center;
     border-radius: 10px;
+    background: #78350f;
+    z-index: 999;
+    height: 85px;
+
+    clip-path: polygon(
+        0% 20%, 2% 5%,
+        4% 20%, 6% 10%,
+        8% 20%, 10% 7%,
+        12% 20%, 14% 9%,
+        16% 20%, 18% 6%,
+        20% 20%, 22% 8%,
+        24% 20%, 26% 5%,
+        28% 20%, 30% 10%,
+        32% 20%, 34% 7%,
+        36% 20%, 38% 9%,
+        40% 20%, 42% 6%,
+        44% 20%, 46% 8%,
+        48% 20%, 50% 5%,
+        52% 20%, 54% 10%,
+        56% 20%, 58% 7%,
+        60% 20%, 62% 9%,
+        64% 20%, 66% 6%,
+        68% 20%, 70% 8%,
+        72% 20%, 74% 5%,
+        76% 20%, 78% 10%,
+        80% 20%, 82% 7%,
+        84% 20%, 86% 9%,
+        88% 20%, 90% 6%,
+        92% 20%, 94% 8%,
+        96% 20%, 98% 5%,
+        100% 20%, 100% 100%, 0% 100%
+    );
 }
 
 .footer .nom {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .footer .pages {
@@ -168,25 +199,11 @@ body {
 }
 
 @keyframes btnBounce {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-6px);
-    }
-}
-
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
     }
 }
 
@@ -219,6 +236,10 @@ body {
         align-items: center;
         justify-content: center
     }
+
+.btn{
+    margin-top: 200px;
+}
 
     .text-box p {
         font-size: 16px;

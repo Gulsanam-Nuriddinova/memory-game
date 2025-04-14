@@ -96,7 +96,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(to right, #78350f 0%, #fcd34d 50%, #78350f 100%);
+    background: linear-gradient(to right, #78350f 0%, #bfa13d 50%, #78350f 100%);
     color: white;
     border: none;
     padding: 9px 17px;
@@ -127,7 +127,7 @@ body {
     right: 20px;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #78350f 0%, #fcd34d 50%, #78350f 100%);
+    background: linear-gradient(to right, #78350f 0%, #bfa13d 50%, #78350f 100%);
     color: white;
     border: none;
     padding: 8px 16px;

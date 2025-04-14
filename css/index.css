@@ -237,8 +237,12 @@ body {
         justify-content: center
     }
 
-.btn{
+/* .btn{
     margin-top: 130px;
+} */
+
+.text-box{
+    margin-top: 100px;
 }
 
     .text-box p {

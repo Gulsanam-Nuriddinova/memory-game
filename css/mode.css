@@ -15,7 +15,7 @@
       margin: 0;
   }
 
-  .mode-list h3 {
+h3 {
       font-size: 32px;
       animation: textPop 2s infinite ease-in-out;
       margin-bottom: 50px;

@@ -131,7 +131,7 @@ body {
     border-radius: 10px;
     background: #78350f;
     z-index: 999;
-    height: 85px;
+    height: 60px;
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     padding: 40px 20px;
 }

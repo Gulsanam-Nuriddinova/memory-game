@@ -153,6 +153,25 @@ body {
     height: 16px;
 }
 
+.footer-ad {
+    width: 100%;
+    height: 55px;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 1px dashed #ccc;
+    font-size: 14px;
+    color: #666;
+}
+
+.ad-box {
+    text-align: center;
+    bottom: 60px;
+}
+
+
+
 @media (max-width: 450px) {
 
     .card {
@@ -163,6 +182,10 @@ body {
     .card-front,
     .card-back {
         font-size: 37px !important;
+    }
+
+    .footer-ad{
+        margin-bottom: 100px;
     }
 }
 

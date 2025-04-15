@@ -14,5 +14,6 @@
 @media (max-width: 450px) {
     .game-board {
         grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 100px;
     }
 }

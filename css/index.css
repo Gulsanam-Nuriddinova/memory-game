@@ -57,23 +57,33 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
     padding: 20px;
+}
+
+.header-ad-slot {
+    width: 100%;
+    height: 55px;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 1px dashed #ccc;
+    font-size: 14px;
+    color: #666;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
+    justify-content: center;}
 
 .text-box {
-    top: 200px;
+    top: 100px;
     text-align: center;
-    margin-bottom: 160px;
+    margin-bottom: 150px;
 }
 
 .text-box h1 {
@@ -131,7 +141,7 @@ body {
     border-radius: 10px;
     background: #78350f;
     z-index: 999;
-    height: 60px;
+    height: 40px;
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     padding: 40px 20px;
 }
@@ -139,13 +149,12 @@ body {
 .footer .nom {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 15px;
 }
 
 .footer .pages {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .footer .pages a {
@@ -153,7 +162,6 @@ body {
     font-size: 16px;
     text-decoration: none;
     transition: color 0.3s;
-    margin-top: 10px;
 }
 
 .footer .pages a:hover {
@@ -191,15 +199,16 @@ body {
     }
 
     .footer {
-        padding: 15px;
+        padding: 10px;
     }
 
     .footer .nom {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .footer .pages a {
         font-size: 14px;
+        margin-bottom: 10px;
     }
 }
 
@@ -212,7 +221,7 @@ body {
     }
 
 .text-box{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
     .text-box p {

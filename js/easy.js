@@ -1,4 +1,3 @@
-
 const images = ['🍎', '🍉', '🍓', '🍇', '🍎', '🍉', '🍓', '🍇'];
 let shuffledImages = images.sort(() => Math.random() - 0.5);
 let gameBoard = document.getElementById('gameBoard');
@@ -41,8 +40,6 @@ function flipCard() {
     }
 }
 
-createCards();
-
 let timeLeft = 30;
 let timer;
 
@@ -56,7 +53,7 @@ function startTimer() {
 
         if (timeLeft <= 0) {
             clearInterval(timer);
-            endGame(false); 
+            endGame(false);
         }
     }, 1000);
 }
@@ -68,11 +65,23 @@ function endGame(isWin) {
     resultDisplay.innerText = isWin ? "You Win 🥳!" : "You Lose 😕!";
     resultDisplay.style.display = "block";
 
+    const adBox = document.getElementById("adBox");
+    adBox.style.display = "block";
+
+    let countdown = 4;
+    const countdownInterval = setInterval(() => {
+        if (countdown > 0) {
+            countdown--;
+        } else {
+            clearInterval(countdownInterval);
+            adBox.style.display = "none"; 
+            resetGame(); 
+        }
+    }, 1000);
+
     setTimeout(() => {
         resultDisplay.style.display = "none";
-    }, 3000);
-
-    setTimeout(resetGame, 3000);
+    }, 4000);
 }
 
 function checkMatch() {
@@ -81,7 +90,7 @@ function checkMatch() {
         matchedCards += 2;
 
         if (matchedCards === images.length) {
-            endGame(true); 
+            endGame(true);
         }
     } else {
         selectedCards.forEach(card => card.classList.remove('flip'));

@@ -1,4 +1,4 @@
-const images = ['🍎', '🍉', '🍓', '🍇', '🍎', '🍉', '🍓', '🍇'];
+const images = ['🍎','🍇','🍉','🥭','🍎','🍇','🍉','🥭']
 let shuffledImages = images.sort(() => Math.random() - 0.5);
 let gameBoard = document.getElementById('gameBoard');
 let selectedCards = [];

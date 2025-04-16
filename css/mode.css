@@ -1,12 +1,12 @@
   .mode-box {
       background: rgba(255, 255, 255, 0.05);
-      padding: 30px;
+      padding: 20px;
       border-radius: 20px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
       backdrop-filter: blur(10px);
       text-align: center;
       animation: fadeIn 1s ease forwards;
-      margin-top: 100px;
+      margin-top: 80px;
   }
 
   .mode-list {
@@ -16,7 +16,7 @@
   }
 
 h3 {
-      font-size: 32px;
+      font-size: 20px;
       animation: textPop 2s infinite ease-in-out;
       margin-bottom: 50px;
       color: #78350f;

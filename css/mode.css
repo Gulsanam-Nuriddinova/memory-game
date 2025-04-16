@@ -18,7 +18,7 @@
     backdrop-filter: blur(10px);
     text-align: center;
     animation: fadeIn 1s ease forwards;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .mode-list {
@@ -30,7 +30,7 @@
 h3 {
     font-size: 20px;
     animation: textPop 2s infinite ease-in-out;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     color: #78350f;
 }
 

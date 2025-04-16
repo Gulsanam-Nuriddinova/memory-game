@@ -112,13 +112,13 @@ h3 {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .mode-box {
-        padding: 20px;
+        padding: 15px;
     }
 
     .mode-list h3 {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .mode-list-item h4 {

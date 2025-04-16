@@ -114,11 +114,11 @@ h3 {
 
 @media (max-width: 480px) {
     .mode-box {
-        padding: 30px;
+        padding: 25px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 25px;
     }
 

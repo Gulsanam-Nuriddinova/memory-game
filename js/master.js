@@ -68,7 +68,7 @@ function endGame(isWin) {
     const adBox = document.getElementById("adBox");
     adBox.style.display = "block";
 
-    let countdown = 4;
+    let countdown = 5;
     const countdownInterval = setInterval(() => {
         if (countdown > 0) {
             countdown--;
@@ -81,7 +81,7 @@ function endGame(isWin) {
 
     setTimeout(() => {
         resultDisplay.style.display = "none";
-    }, 4000);
+    }, 5000);
 }
 
 function checkMatch() {
@@ -113,5 +113,5 @@ startTimer();
 
 document.getElementById("closeAdButton").addEventListener("click", () => {
     const adBox = document.getElementById("adBox");
-    adBox.style.display = "none"; 
+    adBox.style.display = "none";
 });

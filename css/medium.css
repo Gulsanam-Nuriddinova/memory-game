@@ -2,8 +2,22 @@
     display: grid;
     grid-template-columns: repeat(3, 120px);
     gap: 15px;
-    margin-top: 105px;
+    margin-top: 125px;
     margin-bottom: 90px;
+}
+
+#timerDisplay {
+    font-size: 25px;
+    font-weight: bold;
+    color: #78350f;
+    text-align: left;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
 }
 
 @media (max-width: 900px) {
@@ -15,6 +29,6 @@
 @media (max-width: 450px) {
     .game-board {
         grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 100px;
+        margin-bottom: 75px;
     }
 }

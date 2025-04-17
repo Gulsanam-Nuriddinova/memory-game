@@ -237,13 +237,13 @@ body {
 @media (max-width: 900px) {
 
     .card {
-        width: 80px;
-        height: 80px;
+        width: 85px;
+        height: 85px;
     }
 
     .card-front,
     .card-back {
-        font-size: 24px;
+        font-size: 40px;
     }
 
     #resultDisplay {

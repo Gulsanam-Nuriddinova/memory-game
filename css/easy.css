@@ -22,5 +22,6 @@
     .game-board {
         grid-template-columns: repeat(3, 80px);
         gap: 10px;
+        margin-bottom: 130px;
     }
 }
